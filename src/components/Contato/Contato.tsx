@@ -10,21 +10,21 @@ function Contato() {
       </p>
       <div className={styles.info}>
         <div className={styles.item}>
-          <FaEnvelope color="#1e1ea8" size={24} />
+          <FaEnvelope color="#c9a84c" size={24} />
           <div>
             <p className={styles.label}>Email</p>
             <a href="mailto:gafmoura@gmail.com" className={styles.link}>gafmoura@gmail.com</a>
           </div>
         </div>
         <div className={styles.item}>
-          <FaLinkedin color="#1e1ea8" size={24} />
+          <FaLinkedin color="#c9a84c" size={24} />
           <div>
             <p className={styles.label}>LinkedIn</p>
             <a href="https://linkedin.com/in/gabriel-moura7" target="_blank" rel="noreferrer" className={styles.link}>linkedin.com/in/gabriel-moura7</a>
           </div>
         </div>
         <div className={styles.item}>
-          <FaGithub color="#1e1ea8" size={24} />
+          <FaGithub color="#c9a84c" size={24} />
           <div>
             <p className={styles.label}>GitHub</p>
             <a href="https://github.com/gafmoura7" target="_blank" rel="noreferrer" className={styles.link}>github.com/gafmoura7</a>

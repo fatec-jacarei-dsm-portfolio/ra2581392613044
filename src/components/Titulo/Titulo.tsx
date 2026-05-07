@@ -11,7 +11,7 @@ function Titulo() {
         Olá, eu sou o <span className={styles.destaque}>Gabriel Moura</span>
       </h1>
       <p className={styles.subtitulo}>
-        Desenvolvedor fullstack em formação...
+        Transformando ideias em sistemas completos, modernos e funcionais.
       </p>
       <div className={styles.botoes}>
         <button onClick={() => scrollTo('projetos')} className={styles.btnPrimario}>

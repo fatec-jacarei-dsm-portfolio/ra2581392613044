@@ -20,11 +20,11 @@
 .titulo {
   font-size: 32px;
   font-weight: 700;
-  color: #000000;
+  color: #c9a84c;
   text-align: center;
   margin-bottom: 40px;
   padding-bottom: 16px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #c9a84c;
 }
 
 .linha {
@@ -46,22 +46,11 @@
 .ano {
   font-size: 14px;
   font-weight: 700;
-  color: #000000;
+  color: #ffffff;
   min-width: 36px;
   position: absolute;
   left: -70px;
   top: 16px;
-}
-
-.bolinha {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: #1e1ea8;
-  flex-shrink: 0;
-  margin-top: 18px;
-  position: absolute;
-  left: -22px;
 }
 
 .card {
@@ -74,7 +63,7 @@
 }
 
 .card:hover {
-  box-shadow: inset 4px 4px 8px #b8bec7, inset -4px -4px 8px #ffffff;
+  box-shadow: inset 4px 4px 8px #2d2d2e, inset -4px -4px 8px #ffffff;
 }
 
 .itemTitulo {
@@ -86,7 +75,7 @@
 
 .local {
   font-size: 13px;
-  color: #1e1ea8;
+  color: #c9a84c;
   font-weight: 500;
   margin-bottom: 8px;
 }

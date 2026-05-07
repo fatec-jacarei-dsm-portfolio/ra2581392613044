@@ -1,5 +1,5 @@
 .footer {
-  background-color: #1a1a2e;
+  background-color: #000000;
   padding: 40px;
   margin-top: 60px;
 }
@@ -16,7 +16,7 @@
 .nome {
   font-size: 18px;
   font-weight: 700;
-  color: #fff;
+  color: #c9a84c;
   margin-bottom: 4px;
 }
 

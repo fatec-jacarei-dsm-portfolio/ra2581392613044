@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 16px 40px;
-  background-color: #e0e5ec;
+  background-color: #000000;
   box-shadow: 0 4px 12px #b8bec7;
   position: sticky;
   top: 0;
@@ -12,8 +12,9 @@
 
 .logo {
   font-size: 23px;
-  font-weight: 700;
-  color: #000000;
+  text-decoration: none;
+  font-weight: 350;
+  color: #c9a84c;
 }
 
 .links {
@@ -23,16 +24,17 @@
 
 .link {
   padding: 8px 16px;
-  border-radius: 10px;
-  background-color: #1e1ea8;
-  box-shadow: 4px 4px 8px #b8bec7, -4px -4px 8px #ffffff;
-  border: none;
-  font-size: 14px;
-  color: #fff;
+  border-radius: 12px;
+  background-color: #c9a84c;
+  font-size: 15px;
+  color: #ffffff;
   cursor: pointer;
+  border: 0px solid #c9a84c;
   transition: box-shadow 0.2s;
 }
 
+
 .link:hover {
-  box-shadow: inset 4px 4px 8px rgba(0,0,0,0.2), inset -4px -4px 8px rgba(255,255,255,0.1);
-}
+ box-shadow: inset 4px 4px 8px #4e4e49, inset -4px -4px 8px #c9a84c;}
+
+ 
