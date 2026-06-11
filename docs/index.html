@@ -1,14 +1,393 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/ico" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gabriel's Portfolio</title>
-    <script type="module" crossorigin src="/assets/index-Cs6Hcle-.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-C5mT87xr.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Portfólio de Gabriel Moura, estudante de Desenvolvimento de Software Multiplataforma."
+    >
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gabriel Moura | Portfólio</title>
   </head>
   <body>
-    <div id="root"></div>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Navegação principal">
+        <a class="logo" href="#home">Gabriel Moura</a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#trajetoria">Trajetória</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-content reveal visible">
+          <p class="eyebrow">Desenvolvedor de Software</p>
+          <h1>Olá, eu sou o <span>Gabriel Moura</span></h1>
+          <p class="hero-subtitle">
+            Transformando ideias em sistemas completos, modernos e funcionais.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projetos">Veja meu trabalho</a>
+            <a class="button button-secondary" href="#contato">Entre em contato</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="sobre">
+        <h2 class="section-title">Sobre Mim</h2>
+        <div class="about-content">
+          <img
+            class="profile-photo"
+            src="assets/jo.png"
+            alt="Foto de Gabriel Moura"
+            width="300"
+            height="380"
+          >
+          <div class="about-text">
+            <p>
+              Estudante de Desenvolvimento de Software Multiplataforma na Fatec,
+              atuando na construção de aplicações full stack com foco em
+              performance, usabilidade e boas práticas de desenvolvimento. Busco
+              criar soluções modernas que integrem experiência do usuário,
+              arquitetura eficiente e tecnologia.
+            </p>
+
+            <div class="skills-grid">
+              <article class="skill-card">
+                <h3>
+                  <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                    <path d="m8.7 16.6-4.6-4.6 4.6-4.6-1.4-1.4L1.3 12l6 6 1.4-1.4Zm6.6 0 4.6-4.6-4.6-4.6 1.4-1.4 6 6-6 6-1.4-1.4ZM9.8 21 14.2 3h-2L7.8 21h2Z"/>
+                  </svg>
+                  Desenvolvimento
+                </h3>
+                <ul>
+                  <li>React</li>
+                  <li>Node.js</li>
+                  <li>Vite</li>
+                  <li>Express</li>
+                </ul>
+              </article>
+
+              <article class="skill-card">
+                <h3>
+                  <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                    <path d="M4 2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 4v4h16V6H4Zm0 6v6h16v-6H4Zm2-5h2v2H6V7Zm0 6h2v2H6v-2Z"/>
+                  </svg>
+                  Linguagens
+                </h3>
+                <ul>
+                  <li>TypeScript</li>
+                  <li>JavaScript</li>
+                  <li>Java</li>
+                  <li>Python</li>
+                </ul>
+              </article>
+
+              <article class="skill-card">
+                <h3>
+                  <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                    <path d="M19.4 13a7.7 7.7 0 0 0 0-2l2.1-1.6-2-3.4-2.5 1a8.2 8.2 0 0 0-1.7-1L15 3.3h-4L10.6 6a8.2 8.2 0 0 0-1.7 1L6.4 6l-2 3.4L6.5 11a7.7 7.7 0 0 0 0 2l-2.1 1.6 2 3.4 2.5-1a8.2 8.2 0 0 0 1.7 1l.4 2.7h4l.4-2.7a8.2 8.2 0 0 0 1.7-1l2.5 1 2-3.4L19.4 13ZM13 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z"/>
+                  </svg>
+                  Ferramentas
+                </h3>
+                <ul>
+                  <li>Git</li>
+                  <li>GitHub</li>
+                  <li>Docker</li>
+                  <li>SQL</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects-section reveal" id="projetos">
+        <h2 class="section-title">Meus Projetos</h2>
+        <div class="project-group project-group-personal">
+          <h3 class="project-group-title">Projetos Pessoais</h3>
+          <div class="projects-grid projects-grid-personal">
+            <article class="project-card">
+              <img src="assets/clima-app.png" alt="Tela do projeto Clima App">
+              <div class="project-info">
+                <h3>Clima App</h3>
+                <p>
+                  App de previsão do tempo com busca por cidade, temperatura,
+                  umidade e velocidade do vento.
+                </p>
+                <div class="contribution">
+                  <h4>Minha contribuição</h4>
+                  <p>Desenvolvimento do aplicativo e de suas funcionalidades.</p>
+                </div>
+                <ul class="tags" aria-label="Tecnologias utilizadas">
+                  <li>React</li>
+                  <li>TypeScript</li>
+                  <li>Node.js</li>
+                  <li>Express</li>
+                  <li>Docker</li>
+                </ul>
+                <a class="project-link" href="https://github.com/gafmoura7/clima-app" target="_blank" rel="noopener noreferrer">
+                  <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                    <path d="M12 .7a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.6.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C15 5 16 5.3 16 5.3c.6 1.5.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.8 5.4-5.5 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .7Z"/>
+                  </svg>
+                  Código
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="assets/ocean-cleaner.jpg" alt="Tela inicial do jogo Ocean Cleaner">
+              <div class="project-info">
+                <h3>Ocean Cleaner - A Ocean Rogue-like</h3>
+                <p>
+                  Jogo arcade 2D em que um mergulhador explora o oceano para
+                  coletar lixo marinho, evitar criaturas perigosas e comprar
+                  melhorias tecnológicas.
+                </p>
+                <div class="contribution">
+                  <h4>Minha contribuição</h4>
+                  <p>
+                    Colaboração na criação das imagens, no desenvolvimento de
+                    ideias e na implementação do código do jogo.
+                  </p>
+                </div>
+                <ul class="tags" aria-label="Tecnologias utilizadas">
+                  <li>HTML5 Canvas</li>
+                  <li>JavaScript</li>
+                </ul>
+                <a class="project-link" href="https://github.com/Vitaixs/Ocean-Cleaner-JS" target="_blank" rel="noopener noreferrer">
+                  <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                    <path d="M12 .7a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.6.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C15 5 16 5.3 16 5.3c.6 1.5.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.8 5.4-5.5 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .7Z"/>
+                  </svg>
+                  Código
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="project-group project-group-academic">
+          <h3 class="project-group-title">Projetos Acadêmicos</h3>
+          <div class="projects-grid projects-grid-academic">
+            <article class="project-card">
+              <img src="assets/nexatech-chatbot.png" alt="Tela do assistente acadêmico NexaTech">
+              <div class="project-info">
+                <h3>ChatBot Secretaria - 2DSM - 2026</h3>
+                <p>
+                  Aplicação web de autoatendimento da Secretaria Acadêmica da Fatec
+                  Jacareí, com chatbot, autenticação JWT e documentos oficiais.
+                </p>
+                <div class="contribution">
+                  <h4>Minha contribuição</h4>
+                  <p>
+                    Atuação como desenvolvedor full stack, implementando
+                    funcionalidades no frontend e no backend.
+                  </p>
+                </div>
+                <ul class="tags" aria-label="Tecnologias utilizadas">
+                  <li>React</li>
+                  <li>TypeScript</li>
+                  <li>Node.js</li>
+                  <li>PostgreSQL</li>
+                  <li>Docker</li>
+                  <li>JWT</li>
+                </ul>
+                <a class="project-link" href="https://github.com/NexaTechJAC" target="_blank" rel="noopener noreferrer">
+                  <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                    <path d="M12 .7a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.6.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C15 5 16 5.3 16 5.3c.6 1.5.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.8 5.4-5.5 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .7Z"/>
+                  </svg>
+                  Código
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="assets/pilha.png" alt="Tela do projeto Estruturas Lineares">
+              <div class="project-info">
+                <h3>Estruturas Lineares</h3>
+                <p>
+                  Aplicação web que consome uma API REST de estruturas lineares
+                  (Pilha, Fila e Lista) com conceitos de POO.
+                </p>
+                <div class="contribution">
+                  <h4>Minha contribuição</h4>
+                  <p>
+                    Responsável pelo desenvolvimento completo da aplicação,
+                    incluindo frontend, integração com a API e lógica do projeto.
+                  </p>
+                </div>
+                <ul class="tags" aria-label="Tecnologias utilizadas">
+                  <li>TypeScript</li>
+                  <li>React</li>
+                  <li>API REST</li>
+                  <li>POO</li>
+                </ul>
+                <a class="project-link" href="https://github.com/gafmoura7/pilha" target="_blank" rel="noopener noreferrer">
+                  <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                    <path d="M12 .7a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.6.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C15 5 16 5.3 16 5.3c.6 1.5.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.8 5.4-5.5 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .7Z"/>
+                  </svg>
+                  Código
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="assets/web-syntax-analyzer.png" alt="Tela do projeto Web Syntax Analyzer">
+              <div class="project-info">
+                <h3>Web Syntax Analyzer</h3>
+                <p>
+                  Editor web de código-fonte para uma linguagem fictícia, com
+                  análise léxica e sintática implementadas do zero, realce de
+                  sintaxe e localização precisa de erros.
+                </p>
+                <div class="contribution">
+                  <h4>Minha contribuição</h4>
+                  <p>
+                    Responsável pelo desenvolvimento do backend do projeto,
+                    realizado em trio.
+                  </p>
+                </div>
+                <ul class="tags" aria-label="Tecnologias utilizadas">
+                  <li>TypeScript</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+                <a class="project-link" href="https://github.com/GianlucaAlves/Sintax-Analyzer" target="_blank" rel="noopener noreferrer">
+                  <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                    <path d="M12 .7a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.6.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C15 5 16 5.3 16 5.3c.6 1.5.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.8 5.4-5.5 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .7Z"/>
+                  </svg>
+                  Código
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="trajetoria">
+        <h2 class="section-title">Carreira &amp; Trajetória</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <time datetime="2026">2026</time>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <h3>Desenvolvimento de Software Multiplataforma</h3>
+              <p class="timeline-place">Fatec Jacareí</p>
+              <p>Transferência para universidade pública com foco em desenvolvimento web, mobile e boas práticas de engenharia de software.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time datetime="2024">2024</time>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <h3>Análise e Desenvolvimento de Sistemas</h3>
+              <p class="timeline-place">Anhembi Morumbi</p>
+              <p>Início da jornada na área de tecnologia, onde descobri a paixão pelo desenvolvimento de software.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time datetime="2020">2020</time>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <h3>Vendedor</h3>
+              <p class="timeline-place">Estilo Branco e Preto</p>
+              <p>Atendimento ao cliente, negociação e relacionamento comercial. Habilidades que complementam minha visão de produto e experiência do usuário.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time datetime="2017">2017</time>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <h3>Recreador</h3>
+              <p class="timeline-place">Hotelaria</p>
+              <p>Recreação em hotéis, desenvolvendo comunicação, trabalho em equipe e adaptabilidade em ambientes dinâmicos.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time datetime="2015">2015</time>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <h3>Técnico em Logística</h3>
+              <p class="timeline-place">Etec Cônego José Bento</p>
+              <p>Formação técnica com foco em organização, processos e gestão, base para o pensamento estruturado no desenvolvimento.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact reveal" id="contato">
+        <h2 class="section-title">Entre em Contato</h2>
+        <p class="contact-intro">
+          Estou sempre aberto a novas oportunidades e projetos. Não hesite em
+          entrar em contato!
+        </p>
+        <div class="contact-list">
+          <article class="contact-item">
+            <svg class="icon contact-icon" aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M6.5 8.3H2.7V21h3.8V8.3ZM4.6 2A2.2 2.2 0 1 0 4.6 6.4 2.2 2.2 0 0 0 4.6 2ZM21.3 13.7c0-3.8-2-5.6-4.8-5.6-2.2 0-3.2 1.2-3.8 2.1V8.3H9V21h3.8v-6.3c0-1.7.3-3.3 2.4-3.3 2 0 2.1 1.9 2.1 3.4V21H21l.3-7.3Z"/>
+            </svg>
+            <div>
+              <h3>LinkedIn</h3>
+              <a href="https://linkedin.com/in/gabriel-moura7" target="_blank" rel="noopener noreferrer">linkedin.com/in/gabriel-moura7</a>
+            </div>
+          </article>
+          <article class="contact-item">
+            <svg class="icon contact-icon" aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M12 .7a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.6.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C15 5 16 5.3 16 5.3c.6 1.5.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.8 5.4-5.5 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .7Z"/>
+            </svg>
+            <div>
+              <h3>GitHub</h3>
+              <a href="https://github.com/gafmoura7" target="_blank" rel="noopener noreferrer">github.com/gafmoura7</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div>
+          <p class="footer-name">Gabriel Moura</p>
+          <p>Desenvolvedor de Software</p>
+        </div>
+        <div class="social-links" aria-label="Redes sociais">
+          <a href="https://github.com/gafmoura7" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M12 .7a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.6.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C15 5 16 5.3 16 5.3c.6 1.5.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.8 5.4-5.5 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .7Z"/>
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/gabriel-moura7" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M6.5 8.3H2.7V21h3.8V8.3ZM4.6 2A2.2 2.2 0 1 0 4.6 6.4 2.2 2.2 0 0 0 4.6 2ZM21.3 13.7c0-3.8-2-5.6-4.8-5.6-2.2 0-3.2 1.2-3.8 2.1V8.3H9V21h3.8v-6.3c0-1.7.3-3.3 2.4-3.3 2 0 2.1 1.9 2.1 3.4V21H21l.3-7.3Z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <hr>
+      <p class="copyright">
+        &copy; <span id="current-year">2026</span> Gabriel Moura. Todos os direitos reservados.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

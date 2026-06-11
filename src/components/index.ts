@@ -1,7 +1,0 @@
-export { default as Titulo } from './Titulo/Titulo'
-export { default as Sobre } from './Sobre/Sobre'
-export { default as Projetos } from './Projetos/Projetos'
-export { default as Trajetoria } from './Trajetoria/Trajetoria'
-export { default as Contato } from './Contato/Contato'
-export {default as Navbar} from './Navbar/Navbar'
-export {default as Footer} from './Footer/Footer'

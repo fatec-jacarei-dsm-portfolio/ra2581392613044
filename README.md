@@ -1,18 +1,19 @@
-# Portfólio - Gabriel Moura
+# Portfólio de Projetos - Fatec Jacareí
 
-Portfólio pessoal desenvolvido com foco em apresentar meus projetos, habilidades e experiências na área de desenvolvimento de software.
+**Aluno:** Gabriel Moura
 
-## Tecnologias utilizadas
+**Curso:** Desenvolvimento de Software Multiplataforma
 
-- React
-- TypeScript
-- Vite
-- CSS Modules
+**Turma:** 2º semestre de 2025
 
-## Acesse o portfólio
+---
 
-https://gabriel-moura.vercel.app/
+**Portfólio Online**
 
-## Apresentação em vídeo
+🔗 [Acesse o Portfólio](https://fatec-jacarei-dsm-portfolio.github.io/ra2581392613044/)
 
-[![Apresentação do Portfólio](https://img.youtube.com/vi/TFXKUq1nWaU/0.jpg)](https://www.youtube.com/watch?v=TFXKUq1nWaU)
+---
+
+**Vídeos de Apresentação**
+
+🎤 2DSM - [Vídeo](https://www.youtube.com/watch?v=TFXKUq1nWaU)
